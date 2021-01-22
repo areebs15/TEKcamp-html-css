@@ -1,44 +1,69 @@
+body {
+    background-color: #EDF5E1;
+}
+
 header {
-    background-color: rgb(212, 62, 62);
-    margin-top: 5%; 
-    padding: 5%;
-    font-size: 2em;
+    background-color: #5CDB95; 
+    padding: 2%;
+    font-size: 3em;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
+    color: #05386B;
 }
 /*this is the css for the NAVIGATION*/
 nav {
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    display: flex;
+    justify-content: end;
+    background-color: #05386B;
 }
 
 nav a {
     padding-left: 15px;
     padding-right: 15px;
-    text-align: right;
+    color: white;
+    text-decoration-line: none;
+    font-size: 24px;
 }
 
 nav > div a:hover{
-    background-color: grey;
-    font-size: large;
+    background-color: #379683;
+    font-size: 26px;
+
 }
 
 /*this is the css for the main content*/
-#main-body {
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+}
+
+main > div {
     font-size: 2em;
     text-align: left;
     width: 50%;
-    background-color: grey;
+    background-color: brown;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+div > p {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 div > p:nth-child(odd) {
     background-color: lightgrey;
 }
 
-aside > div {
+div#aside {
     width: 50%;
-    background-color: grey;
+    background-color: white;
+    text-align: left;
 }
 
 /*this is the css for the FOOTER*/
