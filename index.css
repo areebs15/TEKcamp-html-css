@@ -1,0 +1,47 @@
+header {
+    background-color: rgb(212, 62, 62);
+    margin-top: 5%; 
+    padding: 5%;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+/*this is the css for the NAVIGATION*/
+nav {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+nav a {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: right;
+}
+
+nav > div a:hover{
+    background-color: grey;
+    font-size: large;
+}
+
+/*this is the css for the main content*/
+#main-body {
+    font-size: 2em;
+    text-align: left;
+    width: 50%;
+    background-color: grey;
+}
+
+div > p:nth-child(odd) {
+    background-color: lightgrey;
+}
+
+aside > div {
+    width: 50%;
+    background-color: grey;
+}
+
+/*this is the css for the FOOTER*/
+footer {
+    background-color:  rgb(212, 62, 62);
+}
