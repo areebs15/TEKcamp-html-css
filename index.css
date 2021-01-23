@@ -1,7 +1,9 @@
 body {
     background-color: #EDF5E1;
 }
-
+h1 {
+    padding-left: 2%
+}
 header {
     background-color: #5CDB95; 
     padding: 2%;
@@ -45,7 +47,7 @@ main > div {
     font-size: 2em;
     text-align: left;
     width: 50%;
-    background-color: brown;
+    background-color: #5CDB95;
     margin-top: 50px;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -69,4 +71,28 @@ div#aside {
 /*this is the css for the FOOTER*/
 footer {
     background-color:  rgb(212, 62, 62);
+    height: 100px;
+    background-color:  #05386B;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer > div {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+footer a {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    text-decoration-line: none;
+    font-size: 24px;
+    margin-top: 2%;
+}
+
+footer > div a:hover{
+    background-color: #379683;
+    font-size: 26px;
+
 }
