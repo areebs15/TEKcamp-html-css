@@ -1,0 +1,171 @@
+body {
+    background-color: #524e4e;
+}
+h1 {
+    padding-left: 2%
+}
+header {
+    background-color: #df4646; 
+    padding: 2%;
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    color:white;
+}
+/*this is the css for the NAVIGATION*/
+nav {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    background-color: #080808;
+}
+
+nav a {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    text-decoration-line: none;
+    font-size: 24px;
+}
+
+nav > div a:hover{
+    background-color: #df4646;
+    font-size: 26px;
+
+}
+
+/*this is the css for the main content*/
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+}
+
+main > div {
+    font-size: 2em;
+    text-align: left;
+    width: 50%;
+    background-color: #df4646;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+
+main > div > img {
+    height: 500px; 
+    padding-left: 5%; 
+    float: left;
+    padding-right: 5%;
+}
+
+div > p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+div#aside > p:nth-child(odd) {
+    background-color: lightgrey;
+    color: black;
+}
+
+div#aside {
+    width: 50%;
+    background-color: #080808;
+    text-align: left;
+}
+
+/*this is the css for the FOOTER*/
+footer {
+    height: 100px;
+    background-color: #080808;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer > div {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+footer a {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    text-decoration-line: none;
+    font-size: 24px;
+    margin-top: 2%;
+}
+
+footer > div a:hover{
+    background-color: #379683;
+    font-size: 26px;
+
+}
+
+/*this is the css for the GALLERY.HTML*/
+.wrapper > img {
+    display: block;
+    max-width: 100%;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 20px;
+    justify-content: center;
+    height: 50%;
+}
+.gallery__img {
+    display: flex;
+    height: 50%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25%;
+}
+.lil-nav__img {
+    width: 250px;
+    padding-top: 10%;
+}
+
+/*this is the css for the CONTACT.HTML*/
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+button {
+    display: flex;
+    justify-content: center;;
+}
+
+/*this is the css for the MOBILE view*/
+@media only screen and (max-width: 600px) {
+    main > div {
+        width: 100%;
+    }
+
+    div#aside {
+        width: 100%
+    }
+    .lil-nav__img {
+        width: 90px;
+    }
+
+}
+/*this is the css for the TABLET view*/
+@media only screen and (max-width: 900px) {
+    main > div {
+        width: 100%;
+    }
+
+    div#aside {
+        width: 100%
+    }
+
+}

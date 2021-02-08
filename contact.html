@@ -4,8 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <header>
+        <div>
+            Alex Reber's Site!
+        </div>
+    </header>
+    <nav>
+        <div>
+            <a href="index.html">Home</a> 
+            <a href="contact.html">Contact</a> 
+            <a href="gallery.html">Gallery</a> 
+        </div>
+    </nav>
+    <div class="container">
+        <div style="padding-top: 5%; padding-bottom: 5%">
+          <div style="height: 50px; background-color: #f44336">
+            <p style="color:white">Please fill out your information below</p>
+          </div>
+        <div style="background-color: #ffebee; padding-left: 5%; padding-right: 5%; padding-top: 3%">
+          <div>
+                   <label for="name">Name*</label>
+                   <input name="custName" id="name" type="text" placeholder="First and Last Name" required />
+                </div>
+                <div>
+                   <label for="street">Street Address</label>
+                   <input name="custStreet" id="street" type="text" placeholder="12 drive drive lane" />
+                </div>
+                <div>
+                   <label for="city">City</label>
+                   <input name="custCity" id="city" type="text" placeholder="city" />
+                </div>
+                <div>
+                   <label for="state">State</label>
+                   <input name="state" id="state" type="text" Placeholder="NY"/>
+                </div>
+                <div>
+                   <label for="zip">Postal Code</label>
+                   <input name="custZip" id="zip" type="number" placeholder="nnnn (-nnnn)" pattern="^\d{5}(-\d{4})?$" />
+                </div>
+                <div>
+                   <label for="phone">Phone Number</label>
+                   <input name="custPhone" id="phone" type="number" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+                </div> 
+                <div>
+                   <label for="mail">E-mail*</label>
+                   <input name="custEmail" id="mail" type="email" placeholder="johnjohns@email.com" required/>
+                </div>
+    
+                <input name="mailMe" id="mailCB" value="yes" type="checkbox" />
+                <label for="mailCB">Add me to your email list</label><br />
+          
+                <label for="commBox">Tell me more about your experience!</label>
+                <textarea name="custExp" id="commBox"></textarea>
+              </div>
+            </div>
+        <form onSubmit="alert('Thank you for your submission!')">
+          <div style="padding-bottom:20px;">
+            <button onClick="window.location.reload()" type="submit" name="action" style="background-color:#f44336;">Submit
+            </button>
+          </div>
+        </form>
+      </div>
+      <footer>
+        <div>
+            <a href="index.html">Home</a> 
+            <a href="contact.html">Contact</a> 
+            <a href="gallery.html">Gallery</a> 
+        </div>
+        </br>
+        <div style="color: white;">
+            AlexReberInc&copy
+        </div>
+    </footer>
+    
     
 </body>
 </html>
